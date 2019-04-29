@@ -1,0 +1,21 @@
+// transform
+@mixin transform($property) {
+    -webkit-transform: $property;
+    -ms-transform: $property;
+    transform: $property;
+  }
+// transition
+@mixin transition-time($value) {
+    -webkit-transition:($value);
+-o-transition:($value);
+transition:($value);
+}
+// transform3d
+@mixin transform3d ($value1,$value2,$value3){
+    -webkit-transform: translate3d($value1,$value2,$value3);
+-moz-transform: translate3d($value1,$value2,$value3);
+-o-transform: translate3d($value1,$value2,$value3);
+-ms-transform: translate3d($value1,$value2,$value3);
+transform: translate3d($value1,$value2,$value3);
+
+}
